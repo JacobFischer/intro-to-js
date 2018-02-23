@@ -1,0 +1,14 @@
+{
+  "name": "03-transpiling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  },
+  "scripts": {
+    "build": "tsc 01-typescript.ts"
+  }
+}
