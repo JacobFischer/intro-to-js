@@ -12,3 +12,19 @@ class Dog {
 
 const snoopy = new Dog("Snoopy");
 snoopy.bark();
+
+const addDog = <T extends {}>(obj: T) => {
+    return {
+        ...obj,
+        dog: new Dog("Doggie!"),
+    }
+}
+
+const someData = {
+    cat: "bad",
+    food: true,
+};
+
+const someDataAndDog = addDog(someData);
+
+console.log(someDataAndDog.dog.name);
